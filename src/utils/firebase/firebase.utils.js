@@ -31,7 +31,7 @@ export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 export const db = getFirestore();
 
 export const createUserDocumentFromAuth = async (userAuth) => {
-  const userDocRef = doc(db, "users", userAuth.uid);
+  const userDocRef = doc(db, "users", userAuth.uid); /// create into collection users document with name userAuth.uid
 
   const userSnapshot = await getDoc(userDocRef);
 
@@ -41,6 +41,7 @@ export const createUserDocumentFromAuth = async (userAuth) => {
 
     try {
       await setDoc(userDocRef, {
+        /////////// add data to your document userAuth.uid
         displayName,
         email,
         createDate,
