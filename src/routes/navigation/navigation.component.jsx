@@ -9,6 +9,8 @@ import { UserContext } from "../../context/user.context";
 
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+
 function Navigation() {
   const { currentUser } = useContext(UserContext);
   console.log(currentUser);
@@ -31,6 +33,7 @@ function Navigation() {
               SIGN IN
             </Link>
           )}
+          <CartIcon />
         </div>
       </div>
       <Outlet />
