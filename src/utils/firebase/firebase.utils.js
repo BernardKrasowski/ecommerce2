@@ -23,7 +23,7 @@ import {
 //ecommerce2-6b34f.firebaseapp.com
 const firebaseConfig = {
   apiKey: "AIzaSyCB2Rc4YPFZwh1Y7f1YYfQDNVQEEhZSwig",
-  authDomain: "eloquent-florentine-751567.netlify.app",
+  authDomain: "ecommerce2-6b34f.firebaseapp.com",
   projectId: "ecommerce2-6b34f",
   storageBucket: "ecommerce2-6b34f.appspot.com",
   messagingSenderId: "507563137826",
