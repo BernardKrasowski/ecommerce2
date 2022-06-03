@@ -20,10 +20,10 @@ import {
   getDocs,
   snapshotEqual,
 } from "firebase/firestore";
-
+//ecommerce2-6b34f.firebaseapp.com
 const firebaseConfig = {
   apiKey: "AIzaSyCB2Rc4YPFZwh1Y7f1YYfQDNVQEEhZSwig",
-  authDomain: "ecommerce2-6b34f.firebaseapp.com",
+  authDomain: "eloquent-florentine-751567.netlify.app",
   projectId: "ecommerce2-6b34f",
   storageBucket: "ecommerce2-6b34f.appspot.com",
   messagingSenderId: "507563137826",
