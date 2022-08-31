@@ -1,11 +1,10 @@
-import { useContext } from "react";
-
-import { CategoriesContext } from "../../context/categories.context";
-
+import { selectCategoriesMap } from "../../store/categories/category.selector";
+import { useSelector } from "react-redux/es/exports";
 import CategoryPreview from "../../components/category-preivew/category-preview.component";
 
 const CategoriesPreview = () => {
-  const { categoriesMap } = useContext(CategoriesContext);
+  const categoriesMap = useSelector(selectCategoriesMap);
+
   return (
     /// object.keys(...) change your object on an array
     <>
