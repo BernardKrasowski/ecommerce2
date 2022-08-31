@@ -19,6 +19,7 @@ import {
   query,
   getDocs,
   snapshotEqual,
+  DocumentSnapshot,
 } from "firebase/firestore";
 //ecommerce2-6b34f.firebaseapp.com
 const firebaseConfig = {
@@ -67,13 +68,7 @@ export const getCategoriesAndDocuments = async () => {
   const q = query(collectionRef);
   const querySnapshot = await getDocs(q);
 
-  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
-    const { title, items } = docSnapshot.data();
-    acc[title.toLowerCase()] = items;
-    return acc;
-  }, {});
-
-  return categoryMap;
+  return querySnapshot.docs.map((DocSnapshot) => DocSnapshot.data());
 };
 
 //create user login
